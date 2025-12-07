@@ -4,6 +4,8 @@ import { useLocation } from 'react-router-dom';
 import quizData from '../Data/QuizData';
 
 const Quiz = ({ onReset }) => {
+
+
   const location = useLocation();
   const { firstName, lastName } = location.state || {};
 
@@ -48,6 +50,16 @@ const Quiz = ({ onReset }) => {
 
   const finishQuiz = () => {
     setIsSubmitted(true);
+ if (typeof window.reportComplete === "function") {
+      window.reportComplete();
+    } else {
+      console.log("SCORM לא זמין כרגע");
+    }
+     if (typeof window.finishTestSCROM === "function") {
+    window.finishTestSCROM(score, 70);
+  } else {
+    console.log("finishTestSCROM לא זמין כרגע");
+  }
   };
 
   const retryQuiz = () => {
