@@ -1,0 +1,191 @@
+.Methods{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-image: url('/public/assets/imgs/Bg2.jpg');
+    overflow-y: scroll; /* Ensure the container is scrollable */
+    overflow-x: hidden;
+  }
+  .Methods::before {
+  content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 110%;
+        background: rgb(0 0 0 / 71%);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(1px);
+        z-index: -1;
+        z-index: -1;
+  }
+  
+  .white-circle-Methods{
+    position: absolute;
+    width: 100vw;
+    height: 120vh;
+    margin-top: 43vh;
+    background-color: white;
+    border-top-left-radius: 50% 15%;
+    border-top-right-radius: 50% 15%;
+    z-index: 999;
+  }
+    
+  .titleRef{
+    font-family: 'KARANTINA';
+    color: rgb(2, 51, 124);
+    font-size: 3em;
+  }
+    
+  .sub-titleRef{
+font-family: 'KARANTINA';
+    color: rgb(89, 89, 89);
+    font-size: 9.5vmin;
+    text-align: right;
+    position: relative;
+    right: 11vw;
+  }
+  .btn-container{
+    border: 3px solid #595959;
+    width: 40vw;
+    position: relative;
+    right: -54vw;
+    border-radius: 30px;
+    height: 36vh;
+  }
+  .container-btn-blue{
+    position: absolute;
+    width: 38vw;
+    right: 50%;
+    top: 3vh;
+    transform: translateX(50%);
+    height: auto;
+  }
+  .container-text{
+     position: absolute;
+    text-align: center;
+    right: -54vw;
+    width: 40vw;
+    font-weight: bolder;
+    top: 20vh;
+    right: 50%;
+    color: #595959;
+    transform: translateX(50%);
+    font-size: 5vmin;
+    font-family: 'Assistant', sans-serif;
+  }
+  .sub-titleRef-R{
+    font-family: 'KARANTINA';
+    color: rgb(89, 89, 89);
+    font-size: 9.5vmin;
+    text-align: right;
+    padding-right: 7vw;
+    left: -52vw;
+    top: -49.5vh;
+    position: relative;
+  }
+  .btn-Routine{
+    border: 3px solid #595959;
+    width: 41vw;
+    position: relative;
+    left: 4vw;
+    top: -49.5vh;
+    border-radius: 30px;
+    height: 36.5vh;
+  }
+  .Routine-btn{
+    position: absolute;
+    width: 28vw;   
+    right: 50%;
+    top: 3vh;
+    transform: translateX(50%);
+    height: auto;
+  }
+  .Routine-text{
+    font-family: 'Assistant', sans-serif;
+    position: absolute;
+    text-align: center;
+    right: -54vw;
+    width: 40vw;
+    font-weight: bolder;
+    top: 16vh;
+    right: 50%;
+    color: #595959;
+    transform: translateX(50%);
+    font-size: 5.5vmin;
+    font-family: 'Assistant', sans-serif;
+  }
+
+  .Methods .navigation-btn{
+  position: relative;
+    bottom: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    direction: rtl;
+    gap: 260px;
+    font-family: 'Assistant', sans-serif;
+    margin-bottom: 20px;
+
+}
+
+.Methods.next .prev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    color: rgb(89, 89, 89);
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+
+
+
+.Methods .left{
+    transform: rotate(180deg);
+
+}
+
+
+.Methods .text-lable{
+    text-align: center;
+    position: relative;
+    top: 10vh;
+    color: #626262;
+    font-weight: bold;
+}
+
+
+.Ref2Img{
+  width: 80vw;
+  height: auto;
+}
+.clickedDiv {
+  border: 3px solid #007BFF; /* מסגרת כחולה */
+  box-shadow: 0 0 15px rgba(0,123,255,0.5);
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+ .video-methods{
+    width:90vw;
+    height: 30vh;
+    top: 65vh;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+  }

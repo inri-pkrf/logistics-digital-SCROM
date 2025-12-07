@@ -1,0 +1,115 @@
+.Mivne-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-image: url('/public/assets/imgs/Bg2.jpg');
+    overflow-y: scroll; /* Ensure the container is scrollable */
+    overflow-x: hidden;
+
+}
+
+/* שכבת השחרה */
+.Mivne-container::before {
+       content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 110%;
+        background: rgb(0 0 0 / 71%);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(1px);
+        z-index: -1;
+}
+
+    
+    
+   
+.explenation{
+    position: absolute;
+    width: 80vw;
+    height: 50vh;
+    background-color: rgb(0 0 0 / 82%);
+    margin-top: 5vh;
+    right:50%;
+    transform: translateX(50%);
+    border-radius: 20%;
+    border: solid 2px white;
+}
+.explanation-txt{
+    font-family: "Assistant";
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-top: 9vh;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    width: 80vw;
+    color: #ffffff;
+    text-align: center;
+
+}
+.title-container{
+    background-color: rgb(0 0 0 / 82%);
+    border: white solid 3px;
+    border-right: none;
+    width: 94vw;
+    right: 0vw;
+    position: absolute;
+    margin-top: -64vh;
+    height: 12vh;
+    z-index: -1;
+    border-top-left-radius: 10vh;
+    border-bottom-left-radius: 10vh;
+    
+    
+}
+.title{
+    font-family: "karantina";
+    font-size: 2.2em;
+    padding-left: 3vw;
+    font-weight: 400;
+    position: absolute;
+    margin-top: 3vh;
+    width: 90vw;
+    color: #ffffff;
+    text-align: left;
+
+}
+.icon-title-mivne{
+    position: absolute;
+    height: 10vh;
+    right: 6vw;
+    margin-top: 1vh;
+    width: auto;
+}
+.go-next{
+    position: absolute;
+    left: 2vw;
+    margin-top: 61vh;
+}
+.next-arrow{
+    position: absolute;
+    top: 0%;
+    height: 7vh;
+    width: auto;
+    transform: rotate(180deg);
+}
+.next-title{
+      font-family: "Assistant";
+    color: white;
+    margin-top: 2vh;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    position: absolute;
+    left: 16vw;
+}

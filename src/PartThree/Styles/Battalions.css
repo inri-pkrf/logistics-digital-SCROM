@@ -1,0 +1,130 @@
+.Battalions{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-image: url('/public/assets/imgs/Bg2.jpg');
+    overflow-y: scroll; /* Ensure the container is scrollable */
+    overflow-x: hidden;
+  }
+  .Battalions::before {
+  content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 110%;
+background: rgba(0, 0, 0, 0.651);
+backdrop-filter: blur(3px);
+-webkit-backdrop-filter: blur(1px);
+z-index: -1;
+  }
+  
+  .white-circle-Battalions{
+    position: absolute;
+    width: 100vw;
+    height: 108vh;
+    margin-top: 33vh;
+    background-color: white;
+    border-top-left-radius: 50% 15%;
+    border-top-right-radius: 50% 15%;
+    z-index: 999;
+
+  }
+    
+  .titleBattalions{
+    font-family: 'KARANTINA';
+    color: rgb(89, 89, 89);
+    font-size: 3em;
+  }
+
+  .fllow{
+    position: absolute;
+    width: 90vw;
+    transform: translateX(50%);
+    right: 50%;
+    height: auto;
+  }
+
+
+ 
+ .Battalions .navigation-btn{
+position: relative;
+    bottom: -57vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    direction: rtl;
+    gap: 260px;
+    font-family: 'Assistant', sans-serif;
+    margin-bottom: 27px;
+    Z-INDEX: 1000000;
+}
+
+.Battalions.next.prev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    color: rgb(89, 89, 89);
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.Battalions .left{
+    transform: rotate(180deg);
+
+}
+
+.Battalions .text-lable{
+    text-align: center;
+    position: relative;
+    top: 10vh;
+    color: #626262;
+    font-weight: bold;
+}
+
+
+
+.card-content{
+  background-color:  rgb(136 186 223);
+  height: 45vh;
+  position: absolute;
+  top: 34vh;
+  width: 90vw;
+  right: 50%;
+  border: none;
+  border-radius: 20px;
+  transform: translateX(50%);
+  overflow: hidden;
+  z-index: 0;
+}
+.card-title{
+  font-family: "Assistant";
+  color: #ffffff;
+  FONT-SIZE: 1.7EM;
+  font-weight: bolder;
+  margin-top: 6vh;
+}
+.text-batel{
+  font-family: "Assistant";
+    width: 80vw;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    text-align: center;
+    font-size: 1.3em;
+    color:#010101;
+    direction: rtl;
+}

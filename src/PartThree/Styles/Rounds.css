@@ -1,0 +1,110 @@
+.Rounds{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-image: url('/public/assets/imgs/Bg2.jpg');
+    overflow-y: scroll; /* Ensure the container is scrollable */
+    overflow-x: hidden;
+  }
+  .Rounds::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background: rgba(0, 0, 0, 0.651);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(1px);
+  z-index: -1;
+  }
+  
+  .white-circle-Rounds{
+    position: absolute;
+    width: 100vw;
+    height: 102vh;
+    margin-top: 26vh;
+    background-color: white;
+    border-top-left-radius: 50% 15%;
+    border-top-right-radius: 50% 15%;
+    z-index: 999;
+  }
+    
+  .titleRound{
+    font-family: 'KARANTINA';
+    color: rgb(89, 89, 89);
+    font-size: 3em;
+  }
+  .explainRound{
+    font-family: "Assistant";
+    font-size: 1.2em;
+    color: rgb(89, 89, 89);
+  }
+ 
+  .container-btn{
+    position: relative;
+    width:80vw;
+    height: auto;
+  }
+
+
+ 
+  .units-buttons {
+    display: flex;
+    margin-top: 2vh;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.unit-button {
+  direction: rtl;
+  text-align: center;
+  width: 56vw;
+  height: 8vh;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: "Assistant";
+  font-size: 1.2em;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  writing-mode: initial !important;
+  transform: none !important;
+}
+
+.unit-button.right {
+  align-self: flex-end;
+  background: linear-gradient(135deg, #411030, #912f47);
+border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.unit-button.left {
+  align-self: flex-start;
+  background: linear-gradient(135deg, #411030, #912f47);
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.Rounds .navigation-btn{
+   position: relative;
+    bottom: 3vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    direction: rtl;
+    gap: 260px;
+    font-family: 'Assistant', sans-serif;
+    margin-bottom: 20px;
+}

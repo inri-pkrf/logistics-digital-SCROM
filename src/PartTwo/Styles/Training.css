@@ -1,0 +1,212 @@
+.Training{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-image: url('/public/assets/imgs/Bg2.jpg');
+    overflow-y: scroll; /* Ensure the container is scrollable */
+    overflow-x: hidden;
+  }
+  .Training::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 94%;
+    background: rgba(0, 0, 0, 0.849);
+     backdrop-filter: blur(3px);    /* טשטוש */
+    -webkit-backdrop-filter: blur(3px); /* תמיכה בספארי */
+    z-index: -1;
+  }
+  
+  .white-circle-Training{
+position: absolute;
+    width: 160vw;
+    height: 220vh;
+    margin-top: 150vh;
+    background-color: white;
+    border-top-left-radius: 50% 15%;
+    border-top-right-radius: 50% 15%;
+    z-index: 999;
+  }
+    
+  .Training .titleTra{
+    font-family: 'KARANTINA';
+    color: rgb(236, 139, 48);
+    font-size: 3em;
+  }
+  .SubtitleTra{
+    font-family:'Assistant';
+    color: rgb(89, 89, 89);
+    font-size:6vmin;
+  }
+
+  .txt-training{
+      font-family: 'Assistant';
+  font-size: 5vmin;
+  text-align: right;
+  color:rgb(58, 58, 58);
+  padding-right: -5vw;
+  padding-left: 35vw;
+  direction: rtl;
+  width: 90vw;
+  }
+
+
+
+
+
+.explanation-div-Training {
+    position: relative;
+    top: -2vh;
+    background-color: #d9d9d9;
+    width: 90vw;
+    right: -35vw;
+    margin-bottom: 9vw;
+    border-radius: 6vw;
+    direction: rtl;
+}
+
+
+
+
+.explanation-title-Training {
+    font-family: 'Karantina', cursive;
+    font-size: 8vw;
+    text-align: center;
+    margin-top: 2vh;
+    padding-top: 2vh;
+    color: rgb(58, 57, 57);
+}
+
+.explanation-text-Training {
+
+    position: absolute; /* או fixed אם את רוצה שהוא יישאר על המסך */
+    top: 100%; /* יפתח מתחת לכותרת */
+    left: 0;
+    width: 100%; /* אפשר להתאים לפי הצורך */
+    max-height: 50vh; /* הגבלת גובה */
+    overflow-y: auto; /* גלילה פנימית */
+    background-color: #d9d9d9;
+    border-radius: 6vw;
+    z-index: 2000; /* מעל כל התוכן */
+
+}
+
+.Training .explanation-text-scroll{
+  max-height: 28vh;
+    min-height: 6vh;
+    overflow-y: auto;
+    text-align: right;
+     padding-right: 4vh;
+    padding-left: 4vh;
+    text-align: right;
+}
+.Training .small-text-drop{
+    font-size: 4vmin;
+    direction: ltr;
+    font-weight: 600;
+    color: #4e4d4d;
+    padding-bottom: 1vh;
+}
+
+.Training .arrow-icon1 {
+    height: 3vh;
+    width: auto;
+    right: 2vw;
+    position: relative;
+    top: -3.42vh;
+    padding-left: -23vw;
+    margin-left: -230px;
+    transform: rotate(180deg);
+}
+
+.Training .arrow-icon1.rotated {
+    transform: rotate(90deg);
+}
+
+.TraImg{
+  width: 60VW;
+  height: auto;
+}
+
+
+.Ref2Img{
+  width: 80vw;
+  height: auto;
+}
+.fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.fullscreen-img {
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+  .Training .navigation-btn{
+position: absolute;
+    bottom: -118vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    direction: rtl;
+    gap: 260px;
+    font-family: 'Assistant', sans-serif;
+    margin-bottom: 0;
+    z-index: 1000000;
+
+}
+
+.Training.next .prev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    color: rgb(89, 89, 89);
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.Training .left{
+    transform: rotate(180deg);
+
+}
+
+.Training .text-lable{
+    text-align: center;
+    position: relative;
+    top: 10vh;
+    color: #626262;
+    font-weight: bold;
+}
