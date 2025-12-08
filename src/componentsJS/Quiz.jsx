@@ -50,7 +50,7 @@ const Quiz = ({ onReset }) => {
 
   const finishQuiz = () => {
     setIsSubmitted(true);
- if (typeof window.reportComplete === "function") {
+if (typeof window.reportComplete === "function") {
       window.reportComplete();
     } else {
       console.log("SCORM לא זמין כרגע");
