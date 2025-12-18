@@ -55,7 +55,7 @@ function HapakMichlala() {
 
                     <button
                         className={`HapakNav ${visitedBtns['help'] ? 'visited' : ''}`}
-                        onClick={() => handleClick('help', '/excelExplenation')}
+                        onClick={() => handleClick('help', '/ExcelMinala')}
                     >
                         עזר חפק מנהלה
                     </button>

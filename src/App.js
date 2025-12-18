@@ -105,7 +105,7 @@ function App() {
                     <Route path="/rounds" element={<Rounds />} />
                     <Route path="/BATTALIONS" element={<Battalions />} />
                     <Route path="/validation" element={<Validiation />} />
-                    <Route path="/excelExplenation" element={<ExcelMinala />} />
+                    <Route path="/ExcelMinala" element={<ExcelMinala />} />
                     <Route path="/backdoor" element={<BackDoor />} />
                     <Route path="/BackYard" element={<BackYard />} />
                     <Route path="/hapakMichlala" element={<HapakMichlala />} />
